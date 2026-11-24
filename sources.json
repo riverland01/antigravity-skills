@@ -1,0 +1,32 @@
+{
+  "skills": [
+    {
+      "name": "orchestrate",
+      "path": ".agents/skills/orchestrate",
+      "upstream_repo": "https://github.com/riverland01/Skills",
+      "upstream_path": "orchestrate/antigravity",
+      "upstream_ref": "main",
+      "upstream_commit": "4a92e68c852913a99a5680acddf53f593124b558",
+      "mode": "verbatim"
+    },
+    {
+      "name": "grill-me",
+      "path": ".agents/skills/grill-me",
+      "upstream_repo": "https://github.com/riverland01/Skills",
+      "upstream_path": "grill-me/codex",
+      "upstream_ref": "main",
+      "upstream_commit": "4a92e68c852913a99a5680acddf53f593124b558",
+      "mode": "adapted-for-antigravity",
+      "notes": "Runtime bindings adapted for Antigravity (ask_question, research subagents, GEMINI.md/AGENTS.md/.agents/rules, artifact/scratch checkpoint path). References question-lenses.md and session-record.md copied verbatim."
+    },
+    {
+      "name": "colab-operator",
+      "path": ".agents/skills/colab-operator",
+      "upstream_repo": "https://github.com/googlecolab/google-colab-cli",
+      "upstream_path": "skills/colab-operator",
+      "upstream_ref": "main",
+      "upstream_commit": "33eacf1116968ef4e053b15f23cddd54d5288d02",
+      "mode": "verbatim"
+    }
+  ]
+}
