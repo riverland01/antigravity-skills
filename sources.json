@@ -10,14 +10,14 @@
       "mode": "verbatim"
     },
     {
-      "name": "grill-me",
-      "path": ".agents/skills/grill-me",
+      "name": "grill-me-general",
+      "path": ".agents/skills/grill-me-general",
       "upstream_repo": "https://github.com/riverland01/Skills",
       "upstream_path": "grill-me/codex",
       "upstream_ref": "main",
       "upstream_commit": "4a92e68c852913a99a5680acddf53f593124b558",
       "mode": "adapted-for-antigravity",
-      "notes": "Runtime bindings adapted for Antigravity (ask_question, research subagents, GEMINI.md/AGENTS.md/.agents/rules, artifact/scratch checkpoint path). References question-lenses.md and session-record.md copied verbatim."
+      "notes": "Renamed to grill-me-general to coexist with Antigravity's built-in /grill-me. Runtime bindings adapted for Antigravity (ask_question, research subagents, GEMINI.md/AGENTS.md/.agents/rules, artifact/scratch checkpoint path). References question-lenses.md and session-record.md copied verbatim."
     },
     {
       "name": "colab-operator",

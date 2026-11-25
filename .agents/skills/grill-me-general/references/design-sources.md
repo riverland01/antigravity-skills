@@ -25,10 +25,11 @@ Instruction coverage and behavioral checks are recorded separately in the delive
 
 Ported from `grill-me/codex/SKILL.md` (commit `4a92e68`, `riverland01/Skills`) for Antigravity. Core interview behavior is unchanged; only runtime bindings differ:
 
-- Dropped Codex-only `agents/openai.yaml`; Antigravity discovers `name` and `description` from `.agents/skills/grill-me/SKILL.md` frontmatter.
+- Dropped Codex-only `agents/openai.yaml`; Antigravity discovers `name` and `description` from `.agents/skills/grill-me-general/SKILL.md` frontmatter.
+- Named `grill-me-general` so it coexists cleanly with Antigravity's built-in `/grill-me` command.
 - Referenced applicable project `GEMINI.md`, `AGENTS.md`, and `.agents/rules/*.md` files in "Ground the questions".
 - Mapped bounded read-only delegation onto `invoke_subagent` with `TypeName: "research"`.
 - Mapped structured choice prompts onto Antigravity's `ask_question` tool (unnumbered options without an explicit "Other", `"(Recommended)"` prefix when recommending, plain text for trivial yes/no or open questions).
 - Included `<Artifact Directory Path>/scratch/` as a checkpoint location fallback and explicitly prohibited writing to `GEMINI.md`, `AGENTS.md`, `.agents/rules/`, or `~/.gemini/config/` as part of this skill.
 
-Install per-workspace at `.agents/skills/grill-me/` (or globally at `~/.gemini/config/skills/grill-me/`). When loaded as a workspace skill, `grill-me` takes priority over Antigravity's built-in `/grill-me`.
+Install per-workspace at `.agents/skills/grill-me-general/` (or globally at `~/.gemini/config/skills/grill-me-general/`). Because it uses a distinct name, it works alongside Antigravity's built-in `/grill-me` without overriding it.

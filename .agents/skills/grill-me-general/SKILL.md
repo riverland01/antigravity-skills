@@ -1,5 +1,5 @@
 ---
-name: grill-me
+name: grill-me-general
 description: Clarify and stress-test an idea, plan, decision, or uncertain brief through adaptive questioning and a durable decision record. Use when the user asks to be grilled, challenged, interviewed, or pressure-tested about their thinking before acting (e.g. "grill me on", "poke holes in", "challenge my plan"). Do not impose an interview merely because a task is complex, or substitute this for ordinary execution, explanations, debugging, or review of finished work.
 ---
 

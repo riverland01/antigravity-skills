@@ -7,10 +7,10 @@ Curated Antigravity skills packaged in `.agents/skills/` so they **auto-load** w
 | Skill | Purpose | Source | Edition |
 | --- | --- | --- | --- |
 | [`orchestrate`](.agents/skills/orchestrate/SKILL.md) | Coordinate complex work through selective delegation, synthesis, and verification | [`riverland01/Skills`](https://github.com/riverland01/Skills/tree/main/orchestrate/antigravity) | Antigravity (verbatim) |
-| [`grill-me`](.agents/skills/grill-me/SKILL.md) | Clarify and stress-test ideas, plans, decisions, or briefs with adaptive questioning and a durable decision record | [`riverland01/Skills`](https://github.com/riverland01/Skills/tree/main/grill-me) | Adapted for Antigravity |
+| [`grill-me-general`](.agents/skills/grill-me-general/SKILL.md) | Clarify and stress-test ideas, plans, decisions, or briefs with adaptive questioning and a durable decision record | [`riverland01/Skills`](https://github.com/riverland01/Skills/tree/main/grill-me) | Adapted for Antigravity |
 | [`colab-operator`](.agents/skills/colab-operator/SKILL.md) | Operate Google Colab GPU/TPU runtimes, execute scripts/notebooks, sync files, and manage sessions via `colab` CLI | [`googlecolab/google-colab-cli`](https://github.com/googlecolab/google-colab-cli/tree/main/skills/colab-operator) | Verbatim |
 
-> **Precedence note:** Workspace skills override built-in skills with the same name. Attaching this repository activates the custom `grill-me` skill above instead of Antigravity's built-in `/grill-me`.
+> **Naming note:** Named `grill-me-general` so it coexists cleanly with Antigravity's built-in `/grill-me` command (including `/plan /grill-me`) without overriding it.
 
 ## Using with an Antigravity Remote Project
 
@@ -30,7 +30,7 @@ Local skills in `~/.gemini/config/skills/` are not available in Remote Agent ses
 └── skills/
     ├── colab-operator/
     │   └── SKILL.md
-    ├── grill-me/
+    ├── grill-me-general/
     │   ├── SKILL.md
     │   └── references/
     │       ├── design-sources.md
